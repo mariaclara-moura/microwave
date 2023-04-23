@@ -3,7 +3,7 @@ module encoder(input wire[9:0] keypad,
     input wire clk,
     output wire[3:0] BCD_OUT,
     output wire loadn,
-    output wire pgt_1Hz
+    output wire pgt_1hz
 );
 
 
