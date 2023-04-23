@@ -3,31 +3,25 @@ module debouncer
    input wire loadn,
    output wire debounced_out);
   
-  reg [2:0] i = 3'b000;
-  reg a = 1'b0;
+  reg [2:0] i;
+  reg a;
   assign debounced_out = a;
-  reg hold = 1'b0;
-
-  always @ (posedge loadn) // novo sinal
-    begin
-      if (i == 3'b111) 
-      begin
-        a = 1'b0;
-        hold = 1'b0;
-        i = 3'b000;
-      end
-    end
   
-  always @ (posedge clk)
+  always @ (posedge clk or posedge loadn)
     begin
-      if (i < 3'b111 && hold == 1'b0)
+      if (clear) i = 3'd0;
+  	  else
         begin
-          if (i == 3'd4)
-            a = 1'b1; // produz saída
-          i <= i + 1;
+          if (i == 3'd3)
+            begin
+              a = 1'b1;
+              i = i + 1;
+            end
+          else if (i < 3'd7)
+            begin
+              i = i + 1;
+            end
         end
-      else
-        hold = 1'b1;
     end
   
 endmodule
