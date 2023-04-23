@@ -5,6 +5,6 @@ module mux
    output wire pgt_1hz);
   
 
-assign pgt_1hz = (!enablen ? debounced_out : clk_div_110);
+  assign pgt_1hz = (!enablen ? debounced_out : clk_div_100);
   
 endmodule
