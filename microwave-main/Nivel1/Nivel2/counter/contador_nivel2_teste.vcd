@@ -1,0 +1,274 @@
+$date
+	Sat Apr 22 13:17:01 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module contador_nivel2_teste $end
+$var wire 1 ! zero $end
+$var wire 4 " count_us [3:0] $end
+$var wire 4 # count_m [3:0] $end
+$var wire 4 $ count_ds [3:0] $end
+$var reg 1 % clk $end
+$var reg 4 & dez_sec [3:0] $end
+$var reg 1 ' enable $end
+$var reg 1 ( load $end
+$var reg 4 ) min [3:0] $end
+$var reg 4 * uni_sec [3:0] $end
+$var integer 32 + i [31:0] $end
+$scope module dut $end
+$var wire 1 % clk $end
+$var wire 4 , dez_sec [3:0] $end
+$var wire 1 ' enable $end
+$var wire 1 ( load $end
+$var wire 4 - min [3:0] $end
+$var wire 1 . tc3 $end
+$var wire 4 / uni_sec [3:0] $end
+$var wire 1 ! zero $end
+$var wire 1 0 tc4 $end
+$var wire 1 1 tc2 $end
+$var wire 1 2 tc1 $end
+$var wire 4 3 count_us [3:0] $end
+$var wire 4 4 count_m [3:0] $end
+$var wire 4 5 count_ds [3:0] $end
+$scope module ds $end
+$var wire 1 % clk $end
+$var wire 4 6 count [3:0] $end
+$var wire 4 7 data [3:0] $end
+$var wire 1 ( load $end
+$var wire 1 ' reset $end
+$var wire 1 8 reset_comb $end
+$var wire 1 1 tc $end
+$var wire 1 2 stop $end
+$var reg 4 9 reg_count [3:0] $end
+$upscope $end
+$scope module ms $end
+$var wire 1 % clk $end
+$var wire 4 : count [3:0] $end
+$var wire 4 ; data [3:0] $end
+$var wire 1 ( load $end
+$var wire 1 ' reset $end
+$var wire 1 < reset_comb $end
+$var wire 1 . stop $end
+$var wire 1 0 tc $end
+$var reg 4 = reg_count [3:0] $end
+$upscope $end
+$scope module us $end
+$var wire 1 % clk $end
+$var wire 4 > count [3:0] $end
+$var wire 4 ? data [3:0] $end
+$var wire 1 ( load $end
+$var wire 1 ' reset $end
+$var wire 1 @ reset_comb $end
+$var wire 1 ' stop $end
+$var wire 1 2 tc $end
+$var reg 4 A reg_count [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx A
+0@
+b111 ?
+bx >
+bx =
+0<
+b1000 ;
+bx :
+bx 9
+08
+b101 7
+bx 6
+bx 5
+bx 4
+bx 3
+x2
+x1
+x0
+b111 /
+x.
+b1000 -
+b101 ,
+bx +
+b111 *
+b1000 )
+1(
+0'
+b101 &
+0%
+bx $
+bx #
+bx "
+x!
+$end
+#5000
+0.
+0!
+02
+01
+00
+b111 "
+b111 3
+b111 >
+b111 A
+b101 $
+b101 5
+b101 6
+b101 9
+b1000 #
+b1000 4
+b1000 :
+b1000 =
+18
+1<
+1@
+b0 +
+1%
+1'
+#10000
+b1 +
+0%
+0(
+#15000
+b110 "
+b110 3
+b110 >
+b110 A
+b10 +
+1%
+#20000
+b11 +
+0%
+#25000
+b101 "
+b101 3
+b101 >
+b101 A
+b100 +
+1%
+#30000
+b101 +
+0%
+#35000
+b100 "
+b100 3
+b100 >
+b100 A
+b110 +
+1%
+#40000
+b111 +
+0%
+#45000
+b11 "
+b11 3
+b11 >
+b11 A
+b1000 +
+1%
+#50000
+b1001 +
+0%
+#55000
+b10 "
+b10 3
+b10 >
+b10 A
+b1010 +
+1%
+#60000
+b1011 +
+0%
+#65000
+b1 "
+b1 3
+b1 >
+b1 A
+b1100 +
+1%
+#70000
+b1101 +
+0%
+#75000
+0@
+12
+b0 "
+b0 3
+b0 >
+b0 A
+b1110 +
+1%
+#80000
+b1111 +
+0%
+#85000
+1@
+02
+b1001 "
+b1001 3
+b1001 >
+b1001 A
+b100 $
+b100 5
+b100 6
+b100 9
+b10000 +
+1%
+#90000
+b10001 +
+0%
+#95000
+b1000 "
+b1000 3
+b1000 >
+b1000 A
+b10010 +
+1%
+#100000
+b10011 +
+0%
+#105000
+b111 "
+b111 3
+b111 >
+b111 A
+b10100 +
+1%
+#110000
+b10101 +
+0%
+#115000
+b110 "
+b110 3
+b110 >
+b110 A
+b10110 +
+1%
+#120000
+b10111 +
+0%
+#125000
+b101 "
+b101 3
+b101 >
+b101 A
+b11000 +
+1%
+#130000
+b11001 +
+0%
+#135000
+b100 "
+b100 3
+b100 >
+b100 A
+b11010 +
+1%

@@ -1,0 +1,86 @@
+$date
+	Sun Apr 23 17:24:15 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module nivel2_mag_controle_teste $end
+$var reg 1 ! clearn_TB $end
+$var reg 1 " door_closed_TB $end
+$var reg 1 # startn_TB $end
+$var reg 1 $ stopn_TB $end
+$var reg 1 % timer_done_TB $end
+$scope module DUT $end
+$var wire 1 ! clearn $end
+$var wire 1 " door_closed $end
+$var wire 1 # startn $end
+$var wire 1 $ stopn $end
+$var wire 1 % timer_done $end
+$var wire 1 & saida_set $end
+$var wire 1 ' saida_reset $end
+$var wire 1 ( mag_on $end
+$scope module control_mag $end
+$var wire 1 ! clearn $end
+$var wire 1 " door_closed $end
+$var wire 1 ' reset $end
+$var wire 1 & set $end
+$var wire 1 # startn $end
+$var wire 1 $ stopn $end
+$var wire 1 % timer_done $end
+$upscope $end
+$scope module mag_latch $end
+$var wire 1 ' reset $end
+$var wire 1 & set $end
+$var reg 1 ( Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0(
+1'
+0&
+0%
+0$
+1#
+0"
+0!
+$end
+#5
+1"
+#10
+1$
+#15
+0$
+#20
+0"
+#25
+1%
+1"
+#30
+0%
+#35
+1%
+1!
+#40
+0%
+0!
+#45
+1%
+1!
+1$
+#50
+0#
+#55
+1'
+0%
+0"
+0!
+0$
