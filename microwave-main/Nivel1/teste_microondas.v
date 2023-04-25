@@ -1,4 +1,7 @@
 `timescale 1us/1ps
+`include "Nivel1\microondas.v"
+
+
 module microwave_tb();
 
     reg [9:0] keypad;
@@ -8,9 +11,9 @@ module microwave_tb();
     wire mag_on;
 
     microwave DUT(.startn(startn), .clearn(clearn), .stopn(stopn), .door_closed(door_closed),
-            .keypadpad(keypadpad), .clk(clk), .sec_ones_segs(sec_ones_segs),
+            .keypad(keypad), .clk(clk), .sec_ones_segs(sec_ones_segs),
             .sec_tens_segs(sec_tens_segs), .mins_segs(mins_segs), .mag_on(mag_on)); 
-    //microwave DUT(.startn(startn), .clearn(.clearn), .stopn(stopn), .door_closed(.door_closed), .keypadpad(keypadpad), .clk(clk), .sec_ones_segs(sec_ones_segs), .sec_tens_segs(sec_tens_segs), .mins_segs(mins_segs));
+    //microwave DUT(.startn(startn), .clearn(.clearn), .stopn(stopn), .door_closed(.door_closed), .keypad(keypad), .clk(clk), .sec_ones_segs(sec_ones_segs), .sec_tens_segs(sec_tens_segs), .mins_segs(mins_segs));
     integer i;
 
 
@@ -77,7 +80,7 @@ module microwave_tb();
     initial begin
         // Teste 1
 
-        keypadpad = 9'b000000000;
+        keypad = 9'b000000000;
         door_closed = 0;
         stopn = 1;
         clearn = 1;

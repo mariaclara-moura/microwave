@@ -1,3 +1,8 @@
+`include "Nivel1\Nivel2\counter\contador_nivel2.v"
+`include "Nivel1\Nivel2\decodificador\decodificador.v"
+`include "Nivel1\Nivel2\encoder\encoder.v"
+`include "Nivel1\Nivel2\magnetron\nivel2_mag_controle.v"
+
 module microwave(
     input wire startn, clearn, stopn, door_closed,
     input wire [9:0] keypad,

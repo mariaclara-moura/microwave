@@ -1,7 +1,7 @@
-`include "Nivel2/Nivel3/debouncer.v"
-`include "Nivel2/Nivel3/div_100.v"
-`include "Nivel2/Nivel3/priority_encoder.v"
-`include "Nivel2/Nivel3/mux.v"
+`include "Nivel1\Nivel2\encoder\Nivel3\debouncer.v"
+`include "Nivel1\Nivel2\encoder\Nivel3\div_100.v"
+`include "Nivel1\Nivel2\encoder\Nivel3\priority_encoder.v"
+`include "Nivel1\Nivel2\encoder\Nivel3\mux.v"
 
 module encoder(input wire[9:0] keypad,
     input wire enablen,

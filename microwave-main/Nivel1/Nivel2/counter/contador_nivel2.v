@@ -1,7 +1,7 @@
-`include "Nivel2/Nivel3/contador_mod_10_teste.v"
-`include "Nivel2/Nivel3/contador_mod6.v"
-
 `timescale 1ns/1ps
+`include "Nivel1\Nivel2\counter\Nivel3\contador_mod10.v"
+`include "Nivel1\Nivel2\counter\Nivel3\contador_mod6.v"
+
 
 module contador_nivel2(uni_sec, clear, clk, enable, load, count_us, count_ds, count_m, zero);
 
@@ -20,7 +20,7 @@ module contador_nivel2(uni_sec, clear, clk, enable, load, count_us, count_ds, co
   
   wire tc3 = tc2 & tc1;
   
-  contador_mod10 ms(min, clk, load, enable, count_m, tc4, tc3);
+  contador_mod10 ms(min, clk, load, enable, count_m, tc4, tc3,clear);
   
   assign zero = tc1 & tc2 & tc4;
   

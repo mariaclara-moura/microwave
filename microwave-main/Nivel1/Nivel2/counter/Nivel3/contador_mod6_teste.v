@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-`include "contador_mod6.v"
+`include "C:\Users\maria\Documents\microwave-main\Nivel1\Nivel2\counter\Nivel3\contador_mod_6.v"
 
 module contador_mod6_teste();
 
@@ -8,7 +8,6 @@ module contador_mod6_teste();
   	wire [2:0] count; 
   	wire tc;
   	integer i;
-  
 
   	contador_mod6 dut(data, clk, load, reset, count, tc, stop);
 

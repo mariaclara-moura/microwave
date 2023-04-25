@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-`include "mag_latch.v"
+`include "Nivel1\Nivel2\magnetron\Nivel3\mag_latch.v"
 
 module mag_latch_teste();
 

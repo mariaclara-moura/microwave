@@ -1,5 +1,5 @@
 `timescale 1ns/1ns
-`include "nivel2_mag_controle.v"
+`include "Nivel1\Nivel2\magnetron\nivel2_mag_controle.v"
 
 module nivel2_mag_controle_teste;
 

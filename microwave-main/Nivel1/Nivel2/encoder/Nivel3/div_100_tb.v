@@ -1,5 +1,5 @@
 `timescale 1ns/1ns
-`include "div_100.v"
+`include "Nivel1\Nivel2\encoder\Nivel3\div_100.v"
 
 module div_100_tb;
 

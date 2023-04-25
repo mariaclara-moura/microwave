@@ -1,5 +1,5 @@
-`include "Nivel2/Nivel3/mag_latch.v"
-`include "Nivel2/Nivel3/control_mag.v"
+`include "Nivel1\Nivel2\magnetron\Nivel3\mag_latch.v"
+`include "Nivel1\Nivel2\magnetron\Nivel3\control_mag.v"
 
 module nivel2_mag_controle (
     input wire startn, stopn, clearn, door_closed, timer_done,

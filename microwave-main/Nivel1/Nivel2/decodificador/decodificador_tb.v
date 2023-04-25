@@ -1,5 +1,5 @@
 `timescale 1ns/1ns
-`include "decodificador.v"
+`include "Nivel1\Nivel2\decodificador\decodificador.v"
 
 module decodificador_tb;
 
