@@ -1,0 +1,68 @@
+$date
+	Mon Apr 24 20:46:29 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module div_100_tb $end
+$var wire 1 ! clk_div_100_tb $end
+$var reg 1 " clk_tb $end
+$var integer 32 # i [31:0] $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 1 $ clk_div_100 $end
+$var reg 1 % ciclo $end
+$var integer 32 & i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 &
+0%
+0$
+b0 #
+x"
+z!
+$end
+#5
+b1 &
+b1 #
+1"
+#10
+b10 #
+0"
+#15
+b10 &
+b11 #
+1"
+#20
+b100 #
+0"
+#25
+b11 &
+b101 #
+1"
+#30
+b110 #
+0"
+#35
+b100 &
+b111 #
+1"
+#40
+b1000 #
+0"
+#45
+b101 &
+b1001 #
+1"
+#50
+b1010 #
+0"
